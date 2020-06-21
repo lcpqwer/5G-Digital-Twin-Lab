@@ -1,0 +1,143 @@
+button {
+	outline: none;
+	border: none;
+}
+/* top logo */
+.top-img {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 40px;
+	right: 20px;
+}
+.img1,.img2 {
+	width: 240px;
+}
+/* 视角btn */
+.top-bt {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: 180px;
+	left: 35px;
+}
+.bt1,.bt2 {
+	width: 100px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+.bt2 {
+	margin-top: 10px;
+}
+/* 移动按钮 */
+.c-warpper {
+	width: 175px;
+	height: 90px;
+	position: fixed;
+	left: 80px;
+	bottom: 25px;
+	display: flex;
+	flex-direction: column;
+}
+.c-warpper>div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.c-left, .c-right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.c-bottom,.c-left,.c-right,.c-top {
+	width: 54px;
+	cursor: pointer;
+}
+.c-top {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.c-bottom {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.c-right {
+	right: 0;
+}
+/* 右下logo */
+.bottom-img {
+	position: fixed;
+	bottom: 25px;
+	right: 280px;
+	width: 140px;	
+}
+.bottom-img>img:nth-child(1) {
+    width: 140px
+}
+/* Eachart */
+.Eacharts {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	bottom: 30px;
+	right: 250px;
+}
+.Eacharts>img {
+	width:300px;
+}
+/* password input */
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(144,144,144,0.5);
+    position: fixed;
+    z-index: 10001;
+    top: 0;
+}
+.mask-main {
+    width: 300px;
+    /* height: 100px; */
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    /* position: relative; */
+    margin-top: 50%;
+    transform: translateY(-50%);
+    /* left: 50px; */
+}
+.mask-main>.nav {
+    text-align: center;
+    line-height: 30px;
+}
+.mask-main input {
+    width: 200px;
+    height: 20px;
+    border: 1px solid #c0c0c0;
+    outline: none;
+    text-align: center;
+    margin: 10px 49px;
+}
+.pass-sub {
+    text-align: center;
+}
+#affirm {
+    background-color: green;
+    color: #FFFFFF;
+    margin: 10px 0;
+    margin-right: 30px;
+}
+#cancel {
+    background-color: #cccccc;
+    color: #FFFFFF;
+}
+.pass-sub>button {
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
